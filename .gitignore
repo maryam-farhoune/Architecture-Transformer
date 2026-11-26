@@ -1,0 +1,11 @@
+individual+household+electric/*
+
+# Local environments and Python caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local dataset and private working notebook
+/household_power_consumption.txt
+/architecture_transformer.ipynb
