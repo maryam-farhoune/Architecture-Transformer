@@ -1,0 +1,39 @@
+Le matin, la ville se réveille doucement. Le soleil éclaire les fenêtres de la bibliothèque. Une étudiante ouvre son cahier et prépare une nouvelle expérience. Elle observe les données avant de choisir un modèle. Chaque observation raconte une petite partie de la réalité. Un bon exercice commence par une question précise.
+
+Dans la maison, le compteur mesure la puissance électrique. Le chauffage consomme davantage pendant les journées froides. La cuisine utilise plusieurs appareils au moment du repas. Le soir, les lampes éclairent les pièces occupées. Pendant la nuit, certains appareils restent en marche. La consommation change selon les habitudes de la famille.
+
+Une série temporelle contient des observations rangées dans le temps. La mesure précédente apporte souvent une information utile. Les dernières heures permettent de prévoir une valeur prochaine. Une semaine complète révèle parfois un rythme différent. Le calendrier aide à distinguer les jours de travail et les jours de repos. Il faut conserver cet ordre pendant le découpage des données.
+
+Le réseau récurrent lit les éléments les uns après les autres. Son état caché transporte une mémoire du passé. Une mémoire trop petite peut oublier des détails utiles. Le modèle LSTM ajoute des portes pour contrôler cette mémoire. Certaines informations sont conservées et certaines informations sont oubliées. Ces mécanismes facilitent le traitement de séquences longues.
+
+Le Transformer représente chaque élément par un vecteur. La position indique la place de cet élément dans la séquence. Une tête d'attention compare les éléments et combine leurs informations. Plusieurs têtes peuvent apprendre des relations différentes. Une connexion résiduelle conserve un chemin direct pour les représentations. La normalisation aide le réseau à apprendre de manière stable.
+
+Pour apprendre, le modèle produit une première prédiction. La fonction de perte mesure son erreur. Le calcul des gradients indique comment modifier les paramètres. L'optimiseur applique ensuite une petite mise à jour. Cette opération se répète sur plusieurs groupes de données. Après chaque époque, la validation mesure les progrès sur des exemples séparés.
+
+Le jeu de test doit rester séparé de l'entraînement. Une bonne note sur les exemples connus ne prouve pas une bonne généralisation. Il faut comparer le modèle avec une référence simple. Pour une série électrique, la dernière heure constitue une première référence. La valeur du jour précédent constitue une seconde référence. Un modèle complexe doit justifier son coût par des résultats mesurés.
+
+Dans un modèle de langage, le texte devient une suite de nombres. Chaque caractère peut recevoir un identifiant. Un petit vocabulaire suffit alors pour représenter tous les mots du corpus. Le réseau apprend à prédire le caractère suivant. La cible est décalée d'une position par rapport à l'entrée. Le modèle apprend ainsi une distribution sur les suites possibles.
+
+Une attention causale regarde seulement les positions présentes et passées. Le futur reste caché pendant l'entraînement. Sans cette règle, le réseau pourrait lire directement une partie de la réponse. La génération commence par une courte amorce. Un nouveau caractère est choisi puis ajouté à cette amorce. La même opération continue jusqu'à obtenir la longueur souhaitée.
+
+La température modifie la distribution utilisée pour choisir un caractère. Une température basse favorise les choix déjà probables. Une température élevée laisse davantage de place aux autres choix. Le texte devient souvent plus varié mais aussi plus fragile. Sur un corpus minuscule, les répétitions restent fréquentes. Les sorties illustrent un mécanisme et ne constituent pas une preuve de compréhension.
+
+Un modèle bidirectionnel peut utiliser les mots placés des deux côtés. Pour l'entraîner, on cache une petite partie des mots. Le contexte aide ensuite à retrouver les éléments sélectionnés. Certains mots sont remplacés par un symbole de masque. Certains mots sont remplacés par un autre mot du vocabulaire. Quelques mots sélectionnés restent visibles, mais ils participent toujours à la perte.
+
+Le chat dort tranquillement sur le canapé du salon. Le chien attend près de la porte du jardin. Une enfant lit un livre dans la bibliothèque. Le professeur écrit une phrase au tableau. Une chercheuse prépare une expérience dans le laboratoire. Le jardin reçoit la lumière du matin.
+
+Le chat regarde les oiseaux depuis la fenêtre. Le chien joue avec une balle dans le jardin. Une étudiante emprunte un livre à la bibliothèque. Le professeur explique une nouvelle idée au tableau. La chercheuse compare les résultats de son expérience. Le soleil disparaît derrière les maisons du quartier.
+
+La bibliothèque ferme ses portes au début de la soirée. Les lecteurs rangent les livres sur les étagères. Une lampe reste allumée près du bureau. Le gardien vérifie les fenêtres avant de partir. Dehors, la pluie commence à tomber sur les arbres. La rue devient calme et les passants rentrent chez eux.
+
+Le lendemain, les étudiants discutent de leurs observations. Une courbe montre les prédictions et les valeurs réellement mesurées. Une autre courbe montre la perte pendant l'entraînement. Une erreur moyenne résume une partie des résultats. Les graphiques révèlent aussi les moments difficiles à prévoir. Plusieurs indicateurs sont nécessaires pour comprendre les limites du modèle.
+
+Une expérience reproductible utilise une graine aléatoire connue. Elle décrit les données et les paramètres employés. Elle conserve le modèle choisi sur le jeu de validation. Elle indique les unités des valeurs prédites. Elle distingue les observations des hypothèses. Ces habitudes permettent de vérifier le travail et de le reprendre plus tard.
+
+Au laboratoire, une équipe construit un petit outil pédagogique. Les exemples restent simples pour rendre les calculs visibles. Le code sépare la préparation, le modèle et l'évaluation. Chaque étape vérifie la forme des tenseurs. Une assertion signale immédiatement une incohérence. Les commentaires expliquent les choix qui influencent les résultats.
+
+Les phrases courtes sont complétées par des symboles de padding. Ces symboles remplissent les positions inutilisées. Un masque empêche les mots utiles de lire ces positions. Modifier le padding ne doit pas modifier les prédictions utiles. Cette propriété peut être vérifiée automatiquement. Le test utilise exactement le même masque avant et après la modification.
+
+Le vocabulaire est construit uniquement avec les phrases d'entraînement. Un mot absent de ce vocabulaire reçoit un identifiant inconnu. Cette règle empêche la validation de participer à la préparation du modèle. La normalisation des mesures suit le même principe. La moyenne et l'écart type sont calculés sur le passé disponible. Les données futures ne doivent pas influencer ces paramètres.
+
+À la fin du cours, chacun présente son expérience. Une étudiante explique le masque causal avec un exemple. Un étudiant montre comment retrouver un mot caché. Une autre personne compare les références de prévision électrique. Le groupe discute des erreurs et des pistes d'amélioration. Le prochain exercice commence avec une nouvelle question.
